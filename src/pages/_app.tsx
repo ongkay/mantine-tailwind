@@ -9,6 +9,7 @@ import {
   ColorSchemeProvider,
 } from '@mantine/core'
 import { Notifications } from '@mantine/notifications'
+import { ThemeProvider } from 'next-themes'
 
 export default function App(
   props: AppProps & { colorScheme: ColorScheme }
@@ -22,6 +23,7 @@ export default function App(
     const nextColorScheme =
       value || (colorScheme === 'dark' ? 'light' : 'dark')
     setColorScheme(nextColorScheme)
+
     setCookie('mantine-color-scheme', nextColorScheme, {
       maxAge: 60 * 60 * 24 * 30,
     })
@@ -37,20 +39,21 @@ export default function App(
         />
         <link rel="shortcut icon" href="/favicon.svg" />
       </Head>
-
-      <ColorSchemeProvider
-        colorScheme={colorScheme}
-        toggleColorScheme={toggleColorScheme}
-      >
-        <MantineProvider
-          theme={{ colorScheme }}
-          withGlobalStyles
-          withNormalizeCSS
+      <ThemeProvider attribute="class">
+        <ColorSchemeProvider
+          colorScheme={colorScheme}
+          toggleColorScheme={toggleColorScheme}
         >
-          <Component {...pageProps} />
-          <Notifications />
-        </MantineProvider>
-      </ColorSchemeProvider>
+          <MantineProvider
+            theme={{ colorScheme }}
+            withGlobalStyles
+            withNormalizeCSS
+          >
+            <Component {...pageProps} />
+            <Notifications />
+          </MantineProvider>
+        </ColorSchemeProvider>
+      </ThemeProvider>
     </>
   )
 }
