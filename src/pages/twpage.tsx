@@ -1,9 +1,10 @@
-import { HeroBullets } from '@/components/Hero'
 import React from 'react'
-import { Slider } from '@mantine/core'
 import styled from '@emotion/styled'
+import { Slider } from '@mantine/core'
 import tw, { css } from 'twin.macro'
+
 import { ColorSchemeToggle } from '@/components/ColorSchemeToggle/ColorSchemeToggle'
+import { HeroBullets } from '@/components/Hero'
 
 export default function twpage() {
   return (

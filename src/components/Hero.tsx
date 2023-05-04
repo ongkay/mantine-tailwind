@@ -1,13 +1,13 @@
 import {
-  createStyles,
-  Image,
-  Container,
-  Title,
   Button,
+  Container,
   Group,
-  Text,
+  Image,
   List,
+  Text,
   ThemeIcon,
+  Title,
+  createStyles,
   rem,
 } from '@mantine/core'
 import { IconCheck } from '@tabler/icons-react'
@@ -36,13 +36,13 @@ export function HeroBullets() {
         <div tw="flex justify-between pt-20 pb-5">
           <div className={classes.content}>
             <Title className={classes.title}>
-              A <span className={classes.highlight}>modern</span> React{' '}
-              <br /> components library
+              A <span className={classes.highlight}>modern</span> React <br />{' '}
+              components library
             </Title>
             <Text color="dimmed" mt="md">
-              Build fully functional accessible web applications faster
-              than ever – Mantine includes more than 120 customizable
-              components and hooks to cover you in any situation
+              Build fully functional accessible web applications faster than
+              ever – Mantine includes more than 120 customizable components and
+              hooks to cover you in any situation
             </Text>
 
             <List
@@ -60,12 +60,12 @@ export function HeroBullets() {
                 components and hooks export types
               </List.Item>
               <List.Item>
-                <b>Free and open source</b> – all packages have MIT
-                license, you can use Mantine in any project
+                <b>Free and open source</b> – all packages have MIT license, you
+                can use Mantine in any project
               </List.Item>
               <List.Item>
-                <b>No annoying focus ring</b> – focus ring will appear only
-                when user navigates with keyboard
+                <b>No annoying focus ring</b> – focus ring will appear only when
+                user navigates with keyboard
               </List.Item>
             </List>
 
@@ -83,9 +83,7 @@ export function HeroBullets() {
             </Group>
           </div>
           <Image
-            src={
-              'https://ui.mantine.dev/_next/static/media/image.9a65bd94.svg'
-            }
+            src={'https://ui.mantine.dev/_next/static/media/image.9a65bd94.svg'}
             className={classes.image}
           />
         </div>

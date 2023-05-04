@@ -1,4 +1,4 @@
-import { createStyles } from '@mantine/core';
+import { createStyles } from '@mantine/core'
 
 export default createStyles((theme) => ({
   title: {
@@ -11,4 +11,4 @@ export default createStyles((theme) => ({
       fontSize: 50,
     },
   },
-}));
+}))

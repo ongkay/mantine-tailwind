@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "preview": "next build && next start",
+    "prettiercheck": "prettier --check \"**/*.{ts,tsx}\"",
+    "prettierwrite": "prettier --write \"**/*.{ts,tsx}\""
   },
   "dependencies": {
     "@emotion/react": "^11.10.8",
@@ -36,6 +39,7 @@
     "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.21.5",
     "@emotion/babel-plugin": "^11.10.8",
+    "@ianvs/prettier-plugin-sort-imports": "^3.7.2",
     "@types/node": "18.16.3",
     "@types/react": "18.2.0",
     "@types/react-dom": "18.2.1",

@@ -1,7 +1,7 @@
 import { ActionIcon, Group, useMantineColorScheme } from '@mantine/core'
-import { IconSun, IconMoonStars } from '@tabler/icons-react'
-import { useTheme } from 'next-themes'
 import { useHotkeys } from '@mantine/hooks'
+import { IconMoonStars, IconSun } from '@tabler/icons-react'
+import { useTheme } from 'next-themes'
 import tw from 'twin.macro'
 
 export function ColorSchemeToggle() {

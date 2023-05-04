@@ -1,8 +1,8 @@
-import { Welcome } from '../components/Welcome/Welcome'
-import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle'
 import { useState } from 'react'
-import { Autocomplete } from '@mantine/core'
-import { Drawer, Button, Group } from '@mantine/core'
+import { Autocomplete, Button, Drawer, Group } from '@mantine/core'
+
+import { ColorSchemeToggle } from '@/components/ColorSchemeToggle/ColorSchemeToggle'
+import { Welcome } from '@/components/Welcome/Welcome'
 
 export default function Demo() {
   const [opened, setOpened] = useState(false)
@@ -13,10 +13,7 @@ export default function Demo() {
       <ColorSchemeToggle />
       <div className="container mx-auto">
         <Group position="center" spacing="lg" className="my-10">
-          <Button
-            variant="gradient"
-            gradient={{ from: 'indigo', to: 'cyan' }}
-          >
+          <Button variant="gradient" gradient={{ from: 'indigo', to: 'cyan' }}>
             Indigo cyan
           </Button>
           <Button
@@ -31,10 +28,7 @@ export default function Demo() {
           >
             Teal blue
           </Button>
-          <Button
-            variant="gradient"
-            gradient={{ from: 'orange', to: 'red' }}
-          >
+          <Button variant="gradient" gradient={{ from: 'orange', to: 'red' }}>
             Orange red
           </Button>
         </Group>
