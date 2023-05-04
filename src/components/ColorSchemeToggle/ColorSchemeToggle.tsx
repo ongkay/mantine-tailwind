@@ -1,6 +1,8 @@
 import { ActionIcon, Group, useMantineColorScheme } from '@mantine/core'
 import { IconSun, IconMoonStars } from '@tabler/icons-react'
 import { useTheme } from 'next-themes'
+import { useHotkeys } from '@mantine/hooks'
+import tw from 'twin.macro'
 
 export function ColorSchemeToggle() {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme()
@@ -9,31 +11,22 @@ export function ColorSchemeToggle() {
 
   function setThemes() {
     if (theme !== colorScheme) {
-      console.log('renderr')
       setTheme(colorScheme)
     }
     toggleColorScheme()
     dark ? setTheme('light') : setTheme('dark')
   }
+  useHotkeys([['mod+J', () => setThemes()]])
 
-  // console.log({ theme })
   return (
     <Group position="center" mt="xl">
       <ActionIcon
         onClick={() => setThemes()}
         size="xl"
-        sx={(theme) => ({
-          backgroundColor:
-            theme.colorScheme === 'dark'
-              ? theme.colors.dark[6]
-              : theme.colors.gray[0],
-          color:
-            theme.colorScheme === 'dark'
-              ? theme.colors.yellow[4]
-              : theme.colors.blue[6],
-        })}
+        color={dark ? 'yellow' : 'blue'}
+        css={[dark ? tw`bg-gray-700/30` : tw`bg-gray-300/30`]}
       >
-        {colorScheme === 'dark' ? (
+        {dark ? (
           <IconSun size={20} stroke={1.5} />
         ) : (
           <IconMoonStars size={20} stroke={1.5} />

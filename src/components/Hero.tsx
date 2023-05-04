@@ -14,10 +14,7 @@ import { IconCheck } from '@tabler/icons-react'
 import tw, { theme as tailwindTheme } from 'twin.macro'
 
 const useStyles = createStyles((theme) => ({
-  content: {
-    ...tw`max-w-full lg:(max-w-lg mr-8)`,
-  },
-
+  content: tw`max-w-full lg:(max-w-lg mr-8)`,
   title: {
     color:
       theme.colorScheme === 'dark'
@@ -27,14 +24,8 @@ const useStyles = createStyles((theme) => ({
     fontFamily: `Greycliff CF, ${theme.fontFamily}`,
     ...tw`text-3xl font-black leading-tight md:text-5xl`,
   },
-
-  image: {
-    ...tw`flex-1 invisible lg:visible`,
-  },
-
-  highlight: {
-    ...tw`relative px-4 rounded-lg bg-blue-800/60`,
-  },
+  image: tw`flex-1 invisible lg:visible`,
+  highlight: tw`relative px-4 rounded-lg bg-blue-800/60`,
 }))
 
 export function HeroBullets() {
@@ -42,7 +33,7 @@ export function HeroBullets() {
   return (
     <div>
       <Container>
-        <div tw="flex justify-between py-40">
+        <div tw="flex justify-between pt-20 pb-5">
           <div className={classes.content}>
             <Title className={classes.title}>
               A <span className={classes.highlight}>modern</span> React{' '}
