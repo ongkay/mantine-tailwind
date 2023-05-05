@@ -5,11 +5,11 @@ module.exports = {
   singleQuote: true,
   tabWidth: 2,
   trailingComma: 'es5',
+  printWidth: 90,
   importOrder: [
     '^(react/(.*)$)|^(react$)',
     '^(next/(.*)$)|^(next$)',
     '<THIRD_PARTY_MODULES>',
-    '',
     '^types$',
     '^@/types/(.*)$',
     '^@/config/(.*)$',

@@ -2,11 +2,7 @@ import '@/styles/globals.css'
 import { useState } from 'react'
 import NextApp, { AppContext, AppProps } from 'next/app'
 import Head from 'next/head'
-import {
-  ColorScheme,
-  ColorSchemeProvider,
-  MantineProvider,
-} from '@mantine/core'
+import { ColorScheme, ColorSchemeProvider, MantineProvider } from '@mantine/core'
 import { Notifications } from '@mantine/notifications'
 import { getCookie, setCookie } from 'cookies-next'
 import { ThemeProvider } from 'next-themes'
@@ -39,11 +35,7 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
           colorScheme={colorScheme}
           toggleColorScheme={toggleColorScheme}
         >
-          <MantineProvider
-            theme={{ colorScheme }}
-            withGlobalStyles
-            withNormalizeCSS
-          >
+          <MantineProvider theme={{ colorScheme }} withGlobalStyles withNormalizeCSS>
             <Component {...pageProps} />
             <Notifications />
           </MantineProvider>

@@ -36,13 +36,13 @@ export function HeroBullets() {
         <div tw="flex justify-between pt-20 pb-5">
           <div className={classes.content}>
             <Title className={classes.title}>
-              A <span className={classes.highlight}>modern</span> React <br />{' '}
-              components library
+              A <span className={classes.highlight}>modern</span> React <br /> components
+              library
             </Title>
             <Text color="dimmed" mt="md">
-              Build fully functional accessible web applications faster than
-              ever – Mantine includes more than 120 customizable components and
-              hooks to cover you in any situation
+              Build fully functional accessible web applications faster than ever –
+              Mantine includes more than 120 customizable components and hooks to cover
+              you in any situation
             </Text>
 
             <List
@@ -56,16 +56,16 @@ export function HeroBullets() {
               }
             >
               <List.Item>
-                <b>TypeScript based</b> – build type safe applications, all
-                components and hooks export types
+                <b>TypeScript based</b> – build type safe applications, all components and
+                hooks export types
               </List.Item>
               <List.Item>
-                <b>Free and open source</b> – all packages have MIT license, you
-                can use Mantine in any project
+                <b>Free and open source</b> – all packages have MIT license, you can use
+                Mantine in any project
               </List.Item>
               <List.Item>
-                <b>No annoying focus ring</b> – focus ring will appear only when
-                user navigates with keyboard
+                <b>No annoying focus ring</b> – focus ring will appear only when user
+                navigates with keyboard
               </List.Item>
             </List>
 
@@ -73,11 +73,7 @@ export function HeroBullets() {
               <Button size="md" tw="flex-1 md:flex-none rounded-full">
                 Get started
               </Button>
-              <Button
-                variant="default"
-                size="md"
-                tw="flex-1 md:flex-none rounded-full"
-              >
+              <Button variant="default" size="md" tw="flex-1 md:flex-none rounded-full">
                 Source code
               </Button>
             </Group>

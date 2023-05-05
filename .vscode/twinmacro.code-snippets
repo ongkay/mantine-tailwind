@@ -1,0 +1,58 @@
+{
+  // Snippits that make working with Twin a little easier
+  // https://github.com/ben-rogerson/twin.macro
+  "Add react import": {
+    "scope": "javascript,typescript,typescriptreact",
+    "prefix": "react",
+    "body": "import React from 'react'",
+    "description": "Add react import"
+  },
+  "Add twin imports": {
+    "scope": "javascript,typescript,typescriptreact",
+    "prefix": "twin",
+    "body": "import tw, { css, styled, theme } from 'twin.macro'",
+    "description": "Add twin imports"
+  },
+  "Add twin tw imports": {
+    "scope": "javascript,typescript,typescriptreact",
+    "prefix": "tw",
+    "body": "import tw from 'twin.macro'",
+    "description": "Add twin tw imports"
+  },
+  "Add twin css import": {
+    "scope": "javascript,typescript,typescriptreact",
+    "prefix": "css",
+    "body": "import { css } from 'twin.macro'",
+    "description": "Add twin css import"
+  },
+  "Add twin styled import": {
+    "scope": "javascript,typescript,typescriptreact",
+    "prefix": "styled",
+    "body": "import { styled } from 'twin.macro'",
+    "description": "Add twin styled import"
+  },
+  "Add twin theme import": {
+    "scope": "javascript,typescript,typescriptreact",
+    "prefix": "theme",
+    "body": "import { theme } from 'twin.macro'",
+    "description": "Add twin theme import"
+  },
+  "Emotion jsx pragma": {
+    "scope": "javascript,typescript,typescriptreact",
+    "prefix": "pragma",
+    "body": "/** @jsx jsx */ import { jsx } from '@emotion/core'",
+    "description": "Emotion jsx pragma"
+  },
+  "Add new component": {
+    "scope": "javascript,typescript,typescriptreact",
+    "prefix": "const",
+    "body": "const ${1:Component} = (${2:props}) => (${0:<></>})",
+    "description": "Add new component"
+  },
+  "Add css prop": {
+    "scope": "javascript,typescript,typescriptreact,jsx-attr",
+    "prefix": "css",
+    "body": "css={[${0:tw``}]}",
+    "description": "Add css prop"
+  }
+}

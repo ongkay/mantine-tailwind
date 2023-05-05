@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { Autocomplete, Button, Drawer, Group } from '@mantine/core'
-
 import { ColorSchemeToggle } from '@/components/ColorSchemeToggle/ColorSchemeToggle'
 import { Welcome } from '@/components/Welcome/Welcome'
 
@@ -16,16 +15,10 @@ export default function Demo() {
           <Button variant="gradient" gradient={{ from: 'indigo', to: 'cyan' }}>
             Indigo cyan
           </Button>
-          <Button
-            variant="gradient"
-            gradient={{ from: 'teal', to: 'lime', deg: 105 }}
-          >
+          <Button variant="gradient" gradient={{ from: 'teal', to: 'lime', deg: 105 }}>
             Lime green
           </Button>
-          <Button
-            variant="gradient"
-            gradient={{ from: 'teal', to: 'blue', deg: 60 }}
-          >
+          <Button variant="gradient" gradient={{ from: 'teal', to: 'blue', deg: 60 }}>
             Teal blue
           </Button>
           <Button variant="gradient" gradient={{ from: 'orange', to: 'red' }}>
