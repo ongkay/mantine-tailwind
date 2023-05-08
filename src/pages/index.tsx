@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { Autocomplete, Button, Drawer, Group } from '@mantine/core'
 import { ColorSchemeToggle } from '@/components/ColorSchemeToggle/ColorSchemeToggle'
 import { Welcome } from '@/components/Welcome/Welcome'
+import Formku from '../components/Form'
+import TextEditor from '../components/TextEditor/Index'
 
 export default function Demo() {
   const [opened, setOpened] = useState(false)
@@ -10,6 +12,10 @@ export default function Demo() {
     <>
       <Welcome />
       <ColorSchemeToggle />
+      <Formku />
+      <div className="w-1/3 m-20 mx-auto">
+        <TextEditor />
+      </div>
       <div className="container mx-auto">
         <Group position="center" spacing="lg" className="my-10">
           <Button variant="gradient" gradient={{ from: 'indigo', to: 'cyan' }}>
